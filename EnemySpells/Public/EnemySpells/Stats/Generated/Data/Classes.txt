@@ -1,0 +1,24 @@
+new entry "Wizard"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" ""
+
+new entry "Fighter"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" ""
+
+new entry "Rogue"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" ""
+
+new entry "Barbarian"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" ""
+
+new entry "Ranger"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" ""

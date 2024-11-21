@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="h7279af4346c54cbca8842b6a89818302dfed" version="1">Enable or disable enemies.</content>
+	<content contentuid="h36a31e87963b4e8fa8bfb24f511011e3ab37" version="1">Enable or disable bosses.</content>
+	<content contentuid="h3df60422a48e40ada05e9ebbf6d648e84571" version="1">Prints out which spells each NPC is getting in the console.</content>
+	<content contentuid="hce1d793ced0e4470a2412adff55f1dc88da7" version="1">Distribute spells depending on class (Fighter, Barbarian, Wizard, Rogue, Ranger)</content>
+	<content contentuid="h0e416c53d69d4ad0ae7a5de8fe3ec8359911" version="1">Distribute spells to anyone who has spellslots, regardless of their class</content>
+	<content contentuid="ha2723cefadb148218d2255e60f5a634dc987" version="1">Everyone can use spells without spellslots, regardless of their class</content>
+	<content contentuid="h0452e92c93dd436ea13f47bf426d1a4a4ce0" version="1">Distribute Wizard spells to undead characters</content>
+	<content contentuid="h745bfbfdb114415e9f0bc021922d5a570f86" version="1">Distribute cantrips to all enemy NPCs</content>
+	<content contentuid="h8c27d5104d3a415d901775fad8e1ce7665bf" version="1">Enable or disable Vanilla Spells.</content>
+	<content contentuid="h130b4001d8c344aeb2f6d9d560e7270f0b8f" version="1">Enable or disable PF2e Spells.</content>
+	<content contentuid="hda3135918e6742388485b5379ae533c7fde1" version="1">Enable or disable 5e Spells.</content>
+	<content contentuid="h2ad4677ab1ca49f496d0c396ff978f711281" version="1">Enable or disable Homebrew Spells.</content>
+	<content contentuid="h11a970cbaaf245ac83734765bc5f20093651" version="1">Number of spells NPCs can use.</content>
+	<content contentuid="h38918ce3c4b447d4891defba0c2c16353cd3" version="1">Number of spell slots to give to NPCs.</content>
+	<content contentuid="ha2524e0bb0ce4fc59303d47b4e761fe66cb1" version="1">Minimum level for level 1 spells.</content>
+	<content contentuid="h50e5dc39cf4c404b9faa505595dafca1830e" version="1">Minimum level for level 2 spells.</content>
+	<content contentuid="hb84fae4d5e5a4b19b0587bec327b6bc1ceda" version="1">Minimum level for level 3 spells.</content>
+	<content contentuid="h7900078ad8b443d59524ddfe563cb09f2c4b" version="1">Minimum level for level 4 spells.</content>
+	<content contentuid="h3fd19249a9ca4f70863ce875e6dcfe276ef3" version="1">Minimum level for level 5 spells.</content>
+	<content contentuid="h75c725b284ca4be88d282f15fcd7ec367061" version="1">Minimum level for level 6 spells.</content>
+	<content contentuid="h9abfb5ba0475480b8537a23d977371637a01" version="1">Enemies</content>
+	<content contentuid="h8399926c6f6f46ddbbe44ec232f22d5be366" version="1">Bosses</content>
+	<content contentuid="h622fc065db5f4cd095f780765a8989dc8ad7" version="1">Debug</content>
+	<content contentuid="h7c05f30c6f70476292639ab1ebc3445fd2fa" version="1">Class Mode</content>
+	<content contentuid="h5636f1d2bde9444091c3638ac50ad73a390a" version="1">Classless Mode</content>
+	<content contentuid="h8df820116a004a4a95e1a0f857f02ae01d28" version="1">Chaos Mode</content>
+	<content contentuid="h24763fa170fb4ee08adee422c249de0deb6f" version="1">Undead Mages</content>
+	<content contentuid="hb63b711b9c6e44b39ea1e5d2fded7a2f4573" version="1">Cantrips For Everyone</content>
+	<content contentuid="h98810b910a7f4131a51f191b5ac4dd1c970g" version="1">Vanilla Spells</content>
+	<content contentuid="h70e08fcd9c94494a9436dd018b780fe8bf80" version="1">PF2e Spells</content>
+	<content contentuid="h7283b48635464e7ca3fa727e7c74104b6baf" version="1">5e Spells</content>
+	<content contentuid="h6e93461d897640ea9958be8889390d017b2d" version="1">Homebrew Spells</content>
+	<content contentuid="h2ae8f00d436748fcaa12324bdfae377f480d" version="1">NPC Spells</content>
+	<content contentuid="h326e4558a5a44c51b1610f8c306b461d7d17" version="1">SpellSlot Boost (SpellSlot Levels scales with Minimum Level values below)</content>
+	<content contentuid="h636910682af44bdf84a6f47c96e154d186ec" version="1">Min Level 1</content>
+	<content contentuid="h8e316920e05448e9a941f4e5f9ead53dfc18" version="1">Min Level 2</content>
+	<content contentuid="haddd91d681444a07a095280aa3eadd97begb" version="1">Min Level 3</content>
+	<content contentuid="hd959e21b9359463884940bed88bf2887806e" version="1">Min Level 4</content>
+	<content contentuid="h6373217e2e80424dacac191c335ab2c3c4g2" version="1">Min Level 5</content>
+	<content contentuid="h6ede88958737487fa68611aafde856cbe526" version="1">Min Level 6</content>
+	<content contentuid="h1126aae27c8e4cfca4b9c396b746616e0ad2" version="1">Spell Blacklist</content>
+	<content contentuid="h3d1d724bd4644156ae05c38cd867223a1935" version="1">Spell Blacklist</content>
+	<content contentuid="hcf6b68df03584ec2ad6ff1dff3a55989a479" version="1">Enable or disable blacklisting spells.</content>
+	<content contentuid="h3876b67bed6a4e7b83a96ea2f1a296004248" version="1">List of All Spells</content>
+	<content contentuid="ha14256709de048f089270a410f0be264b8e4" version="1">Case-insensitive spell blacklist. Add entries from the List of all spells to the blacklist, separated by commas.</content>
+	<content contentuid="ha013778c45db45fa9c64c43d85768a689dd1" version="1">A list of all spell names. Only for displaying spells, editing it does not affect gameplay.</content>
+	<content contentuid="h8a712e5753df4fbcb8752e5b0e26820fa236" version="1">List of PF2e Spells (Do not edit)</content>
+	<content contentuid="hd6eaa4e7adab4f9b889e93a31503cd84c68b" version="1">List of Homebrew Spells (Do not edit)</content>
+	<content contentuid="h7f6b4290ec124bad92001efd99f9d06afa5d" version="1">List of Vanilla Spells (Do not edit)</content>
+	<content contentuid="h3c182e22a33c4eac99234e443800c6d53g22" version="1">A list of Vanilla spell names. Only for displaying spells, editing it does not affect gameplay.</content>
+	<content contentuid="h96b6f4e4c5f94331af55e0c132c8e7ae0g7d" version="1">Spell Lists</content>
+	<content contentuid="hed548e68775e4660846515a4cad7beb440dd" version="1">Blacklist</content>
+	<content contentuid="hf3e8224294be40feba077bf0344401bc6f07" version="1">Case-insensitive spell blacklist.&lt;br&gt;Add entries from the Spell Lists below to the blacklist.</content>
+	<content contentuid="h83427fff4014480da71c185e0b6748a4g9gc" version="1">Show Vanilla and Modded Spells.</content>
+</contentList>

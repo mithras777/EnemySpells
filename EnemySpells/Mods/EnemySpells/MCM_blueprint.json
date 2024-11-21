@@ -1,0 +1,514 @@
+{
+    "SchemaVersion": 1,
+    "ModName": "Enemy Spells",
+    "Tabs": [
+        {
+            "TabId": "general_settings",
+            "TabName": "General",
+            "Sections": [
+                {
+                    "SectionId": "general_settings_section",
+                    "SectionName": "General Settings",
+                    "Settings": [
+                        {
+                            "Id": "Enemies",
+                            "Name": "Enemies",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable enemies.",
+                            "Handles": {
+                                "DescriptionHandle": "h7279af4346c54cbca8842b6a89818302dfed",
+                                "NameHandle": "h9abfb5ba0475480b8537a23d977371637a01"
+                            }
+                        },
+                        {
+                            "Id": "Bosses",
+                            "Name": "Bosses",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable or disable bosses.",
+                            "Handles": {
+                                "DescriptionHandle": "h36a31e87963b4e8fa8bfb24f511011e3ab37",
+                                "NameHandle": "h8399926c6f6f46ddbbe44ec232f22d5be366"
+                            }
+                        },
+                        {
+                            "Id": "NpcSpells",
+                            "Name": "NPC Spells",
+                            "Type": "slider_int",
+                            "Default": 2,
+                            "Description": "Number of spells NPCs can use.",
+                            "Handles": {
+                                "DescriptionHandle": "h11a970cbaaf245ac83734765bc5f20093651",
+                                "NameHandle": "h2ae8f00d436748fcaa12324bdfae377f480d"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "SpellSlotBoost",
+                            "Name": "SpellSlot Boost (SpellSlot Levels scales with Minimum Level values below)",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Number of spell slots to give to NPCs.",
+                            "Handles": {
+                                "DescriptionHandle": "h38918ce3c4b447d4891defba0c2c16353cd3",
+                                "NameHandle": "h326e4558a5a44c51b1610f8c306b461d7d17"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "blacklists",
+            "TabName": "Blacklists",
+            "Sections": [
+                {
+                    "SectionId": "blacklist_settings_section",
+                    "SectionName": "Blacklist Settings",
+                    "Settings": [
+                        {
+                            "Id": "BlacklistToggle",
+                            "Name": "Spell Blacklist",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable or disable blacklisting spells.",
+                            "Handles": {
+                                "DescriptionHandle": "hcf6b68df03584ec2ad6ff1dff3a55989a479",
+                                "NameHandle": "h3d1d724bd4644156ae05c38cd867223a1935"
+                            }
+                        },
+                        {
+                            "Id": "SpellBlacklist",
+                            "Name": "Blacklist",
+                            "Type": "text",
+                            "Default": "Ray Of Frost,Focusing Hum, Bind Undead, Heroism 2e, Ooze Form\n, Possitive Attunement, Time Jump, Negative Energy Flood,\n Swift Quiver, Plant Form, Cloudkill,",
+                            "Options": {
+                                "Multiline": true
+                            },
+                            "Description": "Case-insensitive spell blacklist.\nAdd entries from the Spell Lists below to the blacklist.",
+                            "Handles": {
+                                "DescriptionHandle": "hf3e8224294be40feba077bf0344401bc6f07",
+                                "NameHandle": "hed548e68775e4660846515a4cad7beb440dd"
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "BlacklistToggle",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ListToggle",
+                            "Name": "Spell Lists",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Show Vanilla and Modded Spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h83427fff4014480da71c185e0b6748a4g9gc",
+                                "NameHandle": "h96b6f4e4c5f94331af55e0c132c8e7ae0g7d"
+                            }
+                        },
+                        {
+                            "Id": "ListOfVanillaSpells",
+                            "Name": "Vanilla Spells (Do not edit)",
+                            "Type": "text",
+                            "Default": "Vicious Mockery, True Strike, Poison Spray,\nEldritch Blast, Ray Of Frost, Chill Touch, Fire Bolt,\nShocking Grasp, Acid Splash, Minor Illusion, Blade Ward,\nHex, Arms Of Hadar, Armor Of Agathys, Magic Missile,\nIce Knife, Sleep, Burning Hands, Charm Person,\nChromatic Orb, Color Spray, Grease, Hideous Laughter,\nRay Of Sickness, Thunderwave, Witch Bolt, Dissonant Whispers,\nFlurry Of Blows, Holy Rebuke, Divine Favor, Lay On Hands Big Heal,\nInquisitor's Might, Action Surge, Rage, Smite Searing,\nBless, Shield Of Faith, Heroism, Guiding Bolt,\nSanctuary, Inflict Wounds, Smite Thunderous, Smite Wrathful,\nBane, Hail Of Thorns, Ensnaring Strike, Entangle,\nHunter's Mark, Smite Divine, Wild Shape, Hold Person,\nBarkskin, Spike Growth, Flame Blade, Flaming Sphere,\nGust Of Wind, Call Lightning, Lightning Arrow, Blink,\nFireball, Hunger Of Hadar, Slow, Counterspell,\nFear, Fire Shield, Hypnotic Pattern, Lightning Bolt,\nSleet Storm, Stinking Cloud, Vampiric Touch, Fly,\nFist Of Unbroken Air, Fangs Of The Fire Snake, Sacred Weapon, Vow Of Enmity,\nAbjure Enemy, Umbral Cloak, Beacon Of Hope, Spirit Guardians,\nCrusader's Mantle, Smite Blinding, Elemental Weapon Thunder, Blight,\nBlack Tentacles, Confusion, Ice Storm, Invisibility Greater,\nPhantasmal Killer, Resilient Sphere, Stoneskin, Wall Of Fire,\nDeath Ward, Conjure Woodland Beings, Destructive Wave, Cursed Tome Dethrone,\nBestow Curse, Cloudkill, Cone Of Cold, Dominate Person,\nTelekinesis, Wall Of Stone, Cloak Of Shadows Monk, Disintegrate,\nChain Lightning, Circle Of Death, Flesh To Stone, Freezing Sphere,\nGlobe Of Invulnerability, Irresistible Dance, Wall Of Ice, Wholeness Of Body,\nBlade Barrier, Harm, Sunbeam, Wall Of Thorns, Wind Walk",
+                            "Options": {
+                                "Multiline": true
+                            },
+                            "Tooltip": "A list of Vanilla spell names. Only for displaying spells, editing it does not affect gameplay.",
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "ListToggle",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ListOf5eSpells",
+                            "Name": "5e Spells (Do not edit)",
+                            "Type": "text",
+                            "Default": "Resistance, Booming Blade, Green Flame Blade, Sword Burst,\nMind Sliver, Thunderclap, Spare The Dying, Sacred Flame,\nToll The Dead, Word Of Radiance, Gust, Primal Savagery,\nThorn Whip, Poison Spray, Control Flames, Create Bonfire,\nLightning Lure, Frostbite, Cause Fear, Earth Tremor,\nSnare, Chaos Bolt, Tasha's Caustic Brew, Frost Fingers,\nCrown Of Madness, Mind Spike, Shadow Blade, Kinetic Jaunt,\nNathair's Mischief, Tasha's Mind Whip, Vortex Warp, Suggestion,\nWither And Bloom, Healing Spirit, Summon Beast, Warding Wind,\nDust Devil, Aganazzar's Scorcher, Maximilian's Earthen Grasp, Rime's Binding Ice,\nSnilloc's Snowball Storm, Motivational Speech, Intellect Fortress, Enemies Abound,\nLife Transference, Spirit Shroud, Catnap, Summon Shadowspawn,\nThunder Step, Erupting Earth, Flame Arrows, Minute Meteors,\nShadow Of Moil, Raulothim's Psychic Lance, Guardian Of Nature, Summon Elemental,\nFar Step, Steel Wind Strike, Swift Quiver, Conjure Volley,\nDawn, Negative Energy Flood, Holy Weapon, Summon Draconic Spirit,\nSynaptic Static",
+                            "Options": {
+                                "Multiline": true
+                            },
+                            "Tooltip": "A list of all spell names. Only for displaying spells, editing it does not affect gameplay.",
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "ListToggle",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ListofPf2eSpells",
+                            "Name": "PF2e Spells (Do not edit)",
+                            "Type": "text",
+                            "Default": "Acid Splash 2e, Daze, Electric Arc, Elemental Counter,\nGlass Shield, Phase Bolt, Shield 2e, Chill Touch 2e,\nDivine Lance, Disrupt Undead, Gale Blast, Guidance 2e,\nHaunting Hymn, Puff Of Poison, Warp Step, Wall Of Shrubs,\nBuffetting Winds, Burning Hands 2e, Biting Words, Concordant Choir,\nHarm 2e, Heal 2e, Admonishing Ray, Agitate,\nAir Burst, Anticipate Peril, Befuddle, Briny Bolt,\nChilling Spray, Conductive Weapon, Draw Ire, Endure,\nFriend Fetch, Jump 2e, Mage Armor 2e, Magic Missile 2e,\nMud Pit, Shocking Grasp 2e, Sleep 2e, Snow Ball,\nColor Spray, Horizon Thunder Sphere, Acid Arrow 2e, Barkskin 2e,\nBlazing Armory, Blistering Invective, Blood Vendetta, Bone Shaker,\nBrine Dragon Bile, Clawsong, Create Food 2e, Death Knell,\nExtract Poison, Feast Of Ashes, Final Sacrifice, Fire Proof,\nWaterproof, Flame Wisp, Impart Empathy, Impeccable Flow,\nLoose Time Arrow, Mimic Undead, Remove Fear, Remove Paralysis,\nRestore Senses, Resist Energy, Scorching Ray, Sound Burst,\nTelekinetic Maneuver, Warrior Regret, Agonizing Despair, Bind Undead,\nBlazing Dive, Bracing Tendril, Consecrated Flesh, Envenom Companion,\nFireball 2e, Firework Blast, Focusing Hum, Ghostly Weapon,\nHaste 2e, Heroism 2e, Invisibility Sphere, Lightning Bolt 2e,\nMoonlight Ray, Searing Light, Chilling Darkness, Moths Supper,\nOoze Form, Organsight, Percussive Impact, Positive Attunement,\nShadow Projectile, Time Jump, Vampiric Touch 2e, Aerial Form,\nBlink 2e, Blood Spray Curse, Cloak Of Light, Dino Form,\nDiscern Lies, Draw The Lightning, Fey Form, Fire Shield 2e,\nGirzanjes March, Hydraulic Torrent, Mercurial Stride, Radiant Beam,\nSoothing Spring, Stoneskin 2e, Vital Beacon, Weapon Storm,\nWinning Streak, Zephyr Slip, Aberrant Form, Belittling Boast,\nBlazing Fissure, Blink Charge, Blood Feast, Breath Of Life,\nCone Of Cold 2e, Crushing Despair, Death Ward 2e, Elemental Form,\nFlame Dancer, Forceful Hand, Lightning Storm, Plant Form,\nRepelling Pulse, Scouring Pulse, Storm Burst, Synaptic Pulse,\nBlanket Of Stars, Cast Into Time, Chain Lightning 2e, Devil Form,\nElemental Confluence, Necrotize, Phantom Orchestra, Repulsion,\nSpell Wrack",
+                            "Options": {
+                                "Multiline": true
+                            },
+                            "Tooltip": "A list of all spell names. Only for displaying spells, editing it does not affect gameplay.",
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "ListToggle",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ListOfHomebrewSpells",
+                            "Name": "Homebrew Spells (Do not edit)",
+                            "Type": "text",
+                            "Default": "Burn, Decaying Touch, Force Bolt, Freeze,\nIce Weapon, Illusionary Dart, Shadow Lash, Sonic Blast,\nThunder Note, Water Bullet, Water Blast, Thunder Punch,\nLightning Tendril, Gale Bolt, Entomb, Crashing Wave,\nArctic Breath, Crackle, Cold Snap, Aether Lance,\nElectrocute, Fire Cyclone, Flash Freeze, Vortex Blast,\nDimension Cutter, Ice Spike, Jumping Jolt, Aether Storm,\nDevouring Darkness, Fissure, Sky Burst",
+                            "Options": {
+                                "Multiline": true
+                            },
+                            "Tooltip": "A list of homebrew spell names. Only for displaying spells, editing it does not affect gameplay.",
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "ListToggle",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "game_modes",
+            "TabName": "Game Modes",
+            "Sections": [
+                {
+                    "SectionId": "game_modes_section",
+                    "SectionName": "Game Modes",
+                    "Settings": [
+                        {
+                            "Id": "Classes",
+                            "Name": "Class Mode",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Distribute spells depending on class (Fighter, Barbarian, Wizard, Rogue, Ranger)",
+                            "Handles": {
+                                "DescriptionHandle": "hce1d793ced0e4470a2412adff55f1dc88da7",
+                                "NameHandle": "h7c05f30c6f70476292639ab1ebc3445fd2fa"
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Classless",
+                                        "ExpectedValue": "false",
+                                        "Operator": "=="
+                                    },
+                                    {
+                                        "SettingId": "ChaosMode",
+                                        "ExpectedValue": "false",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "UnknownChaosSpells",
+                            "Name": "Randomized Classless Enemies",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Distribute spells to anyone who doesn't have a class",
+                            "Handles": {
+                                "DescriptionHandle": "x",
+                                "NameHandle": "x"
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Classes",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "Classless",
+                            "Name": "Classless Mode",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Distribute spells to anyone who has spell slots, regardless of their class",
+                            "Handles": {
+                                "DescriptionHandle": "h0e416c53d69d4ad0ae7a5de8fe3ec8359911",
+                                "NameHandle": "h5636f1d2bde9444091c3638ac50ad73a390a"
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Classes",
+                                        "ExpectedValue": "false",
+                                        "Operator": "=="
+                                    },
+                                    {
+                                        "SettingId": "ChaosMode",
+                                        "ExpectedValue": "false",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ChaosMode",
+                            "Name": "Chaos Mode",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Everyone can use spells without spell slots, regardless of their class",
+                            "Handles": {
+                                "DescriptionHandle": "ha2723cefadb148218d2255e60f5a634dc987",
+                                "NameHandle": "h8df820116a004a4a95e1a0f857f02ae01d28"
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Classes",
+                                        "ExpectedValue": "false",
+                                        "Operator": "=="
+                                    },
+                                    {
+                                        "SettingId": "Classless",
+                                        "ExpectedValue": "false",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "UndeadMages",
+                            "Name": "Undead Mages",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Distribute Wizard spells to undead characters",
+                            "Handles": {
+                                "DescriptionHandle": "h0452e92c93dd436ea13f47bf426d1a4a4ce0",
+                                "NameHandle": "h24763fa170fb4ee08adee422c249de0deb6f"
+                            }
+                        },
+                        {
+                            "Id": "CantripsForEveryone",
+                            "Name": "Cantrips For Everyone",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Distribute cantrips to all enemy NPCs",
+                            "Handles": {
+                                "DescriptionHandle": "h745bfbfdb114415e9f0bc021922d5a570f86",
+                                "NameHandle": "hb63b711b9c6e44b39ea1e5d2fded7a2f4573"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        ,
+        {
+            "TabId": "spell_source_settings",
+            "TabName": "Spell Sources",
+            "Sections": [
+                {
+                    "SectionId": "spell_source_settings_section",
+                    "SectionName": "Spell Source Settings",
+                    "Settings": [
+                        {
+                            "Id": "VanillaSpells",
+                            "Name": "Vanilla Spells",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable Vanilla Spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h8c27d5104d3a415d901775fad8e1ce7665bf",
+                                "NameHandle": "h98810b910a7f4131a51f191b5ac4dd1c970g"
+                            }
+                        },
+                        {
+                            "Id": "PF2eSpells",
+                            "Name": "PF2e Spells",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable or disable PF2e Spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h130b4001d8c344aeb2f6d9d560e7270f0b8f",
+                                "NameHandle": "h70e08fcd9c94494a9436dd018b780fe8bf80"
+                            }
+                        },
+                        {
+                            "Id": "Spells5e",
+                            "Name": "5e Spells",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable or disable 5e Spells.",
+                            "Handles": {
+                                "DescriptionHandle": "hda3135918e6742388485b5379ae533c7fde1",
+                                "NameHandle": "h7283b48635464e7ca3fa727e7c74104b6baf"
+                            }
+                        },
+                        {
+                            "Id": "HomebrewSpells",
+                            "Name": "Homebrew Spells",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable or disable Homebrew Spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h2ad4677ab1ca49f496d0c396ff978f711281",
+                                "NameHandle": "h6e93461d897640ea9958be8889390d017b2d"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "npc_min_levels",
+            "TabName": "NPC Min Levels",
+            "Sections": [
+                {
+                    "SectionId": "npc_min_level_settings_section",
+                    "SectionName": "NPC Minimum Level Settings",
+                    "Settings": [
+                        {
+                            "Id": "MinLevel1",
+                            "Name": "Min Level 1",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Minimum level for level 1 spells.",
+                            "Handles": {
+                                "DescriptionHandle": "ha2524e0bb0ce4fc59303d47b4e761fe66cb1",
+                                "NameHandle": "h636910682af44bdf84a6f47c96e154d186ec"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "MinLevel2",
+                            "Name": "Min Level 2",
+                            "Type": "slider_int",
+                            "Default": 4,
+                            "Description": "Minimum level for level 2 spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h50e5dc39cf4c404b9faa505595dafca1830e",
+                                "NameHandle": "h8e316920e05448e9a941f4e5f9ead53dfc18"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "MinLevel3",
+                            "Name": "Min Level 3",
+                            "Type": "slider_int",
+                            "Default": 6,
+                            "Description": "Minimum level for level 3 spells.",
+                            "Handles": {
+                                "DescriptionHandle": "hb84fae4d5e5a4b19b0587bec327b6bc1ceda",
+                                "NameHandle": "haddd91d681444a07a095280aa3eadd97begb"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "MinLevel4",
+                            "Name": "Min Level 4",
+                            "Type": "slider_int",
+                            "Default": 7,
+                            "Description": "Minimum level for level 4 spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h7900078ad8b443d59524ddfe563cb09f2c4b",
+                                "NameHandle": "hd959e21b9359463884940bed88bf2887806e"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "MinLevel5",
+                            "Name": "Min Level 5",
+                            "Type": "slider_int",
+                            "Default": 8,
+                            "Description": "Minimum level for level 5 spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h3fd19249a9ca4f70863ce875e6dcfe276ef3",
+                                "NameHandle": "h6373217e2e80424dacac191c335ab2c3c4g2"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "MinLevel6",
+                            "Name": "Min Level 6",
+                            "Type": "slider_int",
+                            "Default": 9,
+                            "Description": "Minimum level for level 6 spells.",
+                            "Handles": {
+                                "DescriptionHandle": "h75c725b284ca4be88d282f15fcd7ec367061",
+                                "NameHandle": "h6ede88958737487fa68611aafde856cbe526"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "debugss",
+            "TabName": "Debug",
+            "Sections": [
+                {
+                    "SectionId": "debugs",
+                    "SectionName": "Debug Settings",
+                    "Settings": [
+                    {
+                        "Id": "Debug",
+                        "Name": "Debug",
+                        "Type": "checkbox",
+                        "Default": false,
+                        "Description": "Prints out which spells each NPC is getting in the console.",
+                        "Handles": {
+                            "DescriptionHandle": "h3df60422a48e40ada05e9ebbf6d648e84571",
+                            "NameHandle": "h622fc065db5f4cd095f780765a8989dc8ad7"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    ]
+}
